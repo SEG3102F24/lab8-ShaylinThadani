@@ -1,3 +1,7 @@
+Shaylin Thadani
+300225897
+
+
 # EmployeeApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
