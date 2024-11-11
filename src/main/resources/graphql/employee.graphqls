@@ -1,0 +1,30 @@
+# Core type definitions
+type Employee {
+  id: ID!
+  name: String!
+  dateOfBirth: String!
+  city: String!
+  salary: Float!
+  gender: String
+  email: String
+}
+
+# Input type for creating and updating employees
+input CreateEmployeeInput {
+  name: String!
+  dateOfBirth: String!
+  city: String!
+  salary: Float!
+  gender: String
+  email: String
+}
+
+# Queries for fetching data
+type Query {
+  employees: [Employee]
+}
+
+# Mutations for modifying data
+type Mutation {
+  newEmployee(createEmployeeInput: CreateEmployeeInput!): Employee!
+}
